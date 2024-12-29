@@ -14,3 +14,9 @@ arr_2.sort()
 
 total_distance = sum([abs(x-y) for x,y in zip(arr_1,arr_2)])
 print(total_distance)
+
+total_similarity = 0
+for x in arr_1:
+    total_similarity = total_similarity + int(x)*arr_2.count(x)
+
+print(total_similarity)
